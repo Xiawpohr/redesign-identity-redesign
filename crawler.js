@@ -8,14 +8,14 @@ admin.initializeApp({
 })
 
 const db = admin.firestore()
-const baseUrl = 'https://identityredesign.tw/work.html'
+const baseUrl = 'https://identityredesign.tw'
 
 function fullUrlOf (asset) {
   return `${baseUrl}/${asset}`
 }
 
 function identityUrlById (id) {
-  return `${baseUrl}?work_id=${id}`
+  return `${baseUrl}/work.html?work_id=${id}`
 }
 
 async function scrape () {
