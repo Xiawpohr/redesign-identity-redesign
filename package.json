@@ -1,0 +1,31 @@
+{
+  "name": "redesign-identity-redesign",
+  "version": "1.0.0",
+  "description": "Redesign the vote flow of the event, Identity Redesign, to a more fair mechanism.",
+  "main": "index.js",
+  "scripts": {
+    "crawler": "node crawler.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "identity-redesign",
+    "firebase",
+    "crawler"
+  ],
+  "author": "Xiawpohr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiawpohr/redesign-identity-redesign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xiawpohr/redesign-identity-redesign/issues"
+  },
+  "homepage": "https://github.com/Xiawpohr/redesign-identity-redesign#readme",
+  "dependencies": {
+    "crawler": "^1.1.4",
+    "firebase-admin": "^5.12.1",
+    "headless-chrome-crawler": "^1.8.0",
+    "jsdom": "^11.11.0"
+  }
+}
