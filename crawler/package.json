@@ -2,7 +2,7 @@
   "name": "redesign-identity-redesign",
   "version": "1.0.0",
   "description": "Redesign the vote flow of the event, Identity Redesign, to a more fair mechanism.",
-  "main": "index.js",
+  "main": "crawler.js",
   "scripts": {
     "crawler": "node crawler.js",
     "test": "echo \"Error: no test specified\" && exit 1"
