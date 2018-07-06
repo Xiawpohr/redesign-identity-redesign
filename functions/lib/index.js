@@ -5,6 +5,7 @@ const nuxt_1 = require("nuxt");
 const express = require("express");
 const app = express();
 const config = {
+    debug: true,
     dev: false,
     buildDir: 'nuxt',
     build: {
@@ -14,14 +15,8 @@ const config = {
 const nuxt = new nuxt_1.Nuxt(config);
 function handleRequest(req, res) {
     res.set('Cache-Control', 'public, max-age=600, s-maxage=1200');
-    nuxt.renderRoute('/')
-        .then(result => {
-        res.send(result.html);
-    })
-        .catch(e => {
-        res.send(e);
-    });
+    return nuxt.render(req, res);
 }
-app.get('*', handleRequest);
+app.use(handleRequest);
 exports.ssrapp = functions.https.onRequest(app);
 //# sourceMappingURL=index.js.map
